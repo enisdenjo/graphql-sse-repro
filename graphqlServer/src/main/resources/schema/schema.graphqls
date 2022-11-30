@@ -1,0 +1,12 @@
+type Subscription {
+    stocks : Stock!
+}
+
+type Query{
+    _sdl: String
+}
+
+type Stock {
+    name : String
+    price : Float
+}
