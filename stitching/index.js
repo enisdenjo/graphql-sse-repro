@@ -83,7 +83,7 @@ function createGraphQLOptions(stitchedSchema) {
         }
     })
     app.use('/subscriptions',handler);
-    let server = app.listen(4200, () => console.info('gateway running http://localhost:4200/ensemble/graphql'));
+    let server = app.listen(4200, () => console.info('gateway running graphql endpoint: http://localhost:4200/graphql and subscriptions endpoint:http://localhost:4200/subscriptions'));
 })();
 
 

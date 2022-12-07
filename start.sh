@@ -8,6 +8,7 @@ function clean_up() {
 trap clean_up SIGHUP SIGINT SIGTERM
 
 cd graphqlServer
+./gradlew compileJava
 ./gradlew bootRun &
 DGS_PID=$!
 echo "graphql server PID is $DGS_PID"
